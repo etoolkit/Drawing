@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{a2674770-03ff-42bc-9190-21a47c3061aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirWatcher">
+      <UniqueIdentifier>{761e6fba-2034-4c48-bf20-645ad798414d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MouseSignal">
+      <UniqueIdentifier>{bbdb371d-7a00-41ac-980b-ee1ab9de4413}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\Laozi.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Laozi.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Image\SelectWnd.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Image\SelectWnd1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Image\CurChooseWnd.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Image\Delete_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Image\Delete_1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowDown.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowDown.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowLeft.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowLeft.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowRight.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowRight.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowUp.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\ArrowUp.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\button_begin.BMP">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\clear1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\clear2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\CurChooseWnd.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\Delete_01.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\Delete_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\Delete_1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\Delete_02.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\Delete_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\export1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\export1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\export2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\export2.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\icon.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\logo_163602.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\search1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\search1.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\search2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\SelectWnd.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\SelectWnd1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\start.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\start.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\start1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\start2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\start3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\stop.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\stop1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\stop2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\stop3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\按钮_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\按钮_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_1_0.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_1_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_1_2 - 副本 - 副本.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_1_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_2_0 (2).bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_2_0.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_2_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_2_2 (2).bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_2_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_3_0.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_3_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_3_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_4_0.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_4_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_4_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_5_0.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_5_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单_5_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\菜单原始2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\顶部背景.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\顶部背景2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\关闭.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\关闭_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\关闭_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\隐藏.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\隐藏_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\隐藏_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\状态.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\最小化.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\最小化_1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Image\最小化_2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Laozi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LaoziDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetCurrentModule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyWinMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinBtn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMainPan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnSelectWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinListBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OwnerDrawListBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBoxCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBossKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dirwatcher\DirectoryChanges.h">
+      <Filter>DirWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dirwatcher\FolderDialog.h">
+      <Filter>DirWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dirwatcher\DelayedDirectoryChangeHandler.h">
+      <Filter>DirWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFileWatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Weather.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="URLToEncode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMainBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPopBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseSignal.h">
+      <Filter>MouseSignal</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseSignalInfo.h">
+      <Filter>MouseSignal</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgHelp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Laozi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LaoziDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWinMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinBtn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMainPan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnSelectWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OwnerDrawListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListBoxCommon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBossKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dirwatcher\FolderDialog.cpp">
+      <Filter>DirWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dirwatcher\DelayedDirectoryChangeHandler.cpp">
+      <Filter>DirWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dirwatcher\DirectoryChanges.cpp">
+      <Filter>DirWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFileWatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Weather.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="URLToEncode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMainBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPopBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseSignal.cpp">
+      <Filter>MouseSignal</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseSignalInfo.cpp">
+      <Filter>MouseSignal</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgHelp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Laozi.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

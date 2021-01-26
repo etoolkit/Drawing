@@ -1,0 +1,34 @@
+// MyATL.idl : MyATL 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(MyATL.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(5AE7C679-1DA2-44E2-B021-B08616931FA0),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ILATLClass : IDispatch{
+};
+[
+	uuid(9535ECF3-9230-470B-B6BF-B91A29BE7244),
+	version(1.0),
+]
+library MyATLLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(414984F1-5B0F-45D7-B32F-C55A483CF7D1)		
+	]
+	coclass LATLClass
+	{
+		[default] interface ILATLClass;
+	};
+};
+

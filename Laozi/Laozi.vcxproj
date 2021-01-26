@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FE48D428-7F13-406C-8B7C-DE7DB74618DA}</ProjectGuid>
+    <RootNamespace>Laozi</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>超级助手</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>../debug/MyHookDll.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)$(Configuration)\MyHookDll.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Debug\Image\ArrowDown.bmp" />
+    <None Include="..\Debug\Image\ArrowDown.png" />
+    <None Include="..\Debug\Image\ArrowLeft.bmp" />
+    <None Include="..\Debug\Image\ArrowLeft.png" />
+    <None Include="..\Debug\Image\ArrowRight.bmp" />
+    <None Include="..\Debug\Image\ArrowRight.png" />
+    <None Include="..\Debug\Image\ArrowUp.bmp" />
+    <None Include="..\Debug\Image\ArrowUp.png" />
+    <None Include="..\Debug\Image\bitmap2.bmp" />
+    <None Include="..\Debug\Image\button_begin.BMP" />
+    <None Include="..\Debug\Image\clear1.bmp" />
+    <None Include="..\Debug\Image\clear2.bmp" />
+    <None Include="..\Debug\Image\CurChooseWnd.cur" />
+    <None Include="..\Debug\Image\Delete_01.bmp" />
+    <None Include="..\Debug\Image\Delete_02.bmp" />
+    <None Include="..\Debug\Image\Delete_1.bmp" />
+    <None Include="..\Debug\Image\Delete_1.png" />
+    <None Include="..\Debug\Image\Delete_2.bmp" />
+    <None Include="..\Debug\Image\export1.bmp" />
+    <None Include="..\Debug\Image\export1.png" />
+    <None Include="..\Debug\Image\export2.bmp" />
+    <None Include="..\Debug\Image\export2.png" />
+    <None Include="..\Debug\Image\icon.png" />
+    <None Include="..\Debug\Image\logo_163602.png" />
+    <None Include="..\Debug\Image\search1.bmp" />
+    <None Include="..\Debug\Image\search1.png" />
+    <None Include="..\Debug\Image\search2.bmp" />
+    <None Include="..\Debug\Image\SelectWnd.bmp" />
+    <None Include="..\Debug\Image\SelectWnd1.bmp" />
+    <None Include="..\Debug\Image\start.bmp" />
+    <None Include="..\Debug\Image\start.ico" />
+    <None Include="..\Debug\Image\start1.bmp" />
+    <None Include="..\Debug\Image\start2.bmp" />
+    <None Include="..\Debug\Image\start3.bmp" />
+    <None Include="..\Debug\Image\stop.bmp" />
+    <None Include="..\Debug\Image\stop1.bmp" />
+    <None Include="..\Debug\Image\stop2.bmp" />
+    <None Include="..\Debug\Image\stop3.bmp" />
+    <None Include="..\Debug\Image\关闭.bmp" />
+    <None Include="..\Debug\Image\关闭_1.bmp" />
+    <None Include="..\Debug\Image\关闭_2.bmp" />
+    <None Include="..\Debug\Image\按钮_1.bmp" />
+    <None Include="..\Debug\Image\按钮_2.bmp" />
+    <None Include="..\Debug\Image\最小化.bmp" />
+    <None Include="..\Debug\Image\最小化_1.bmp" />
+    <None Include="..\Debug\Image\最小化_2.bmp" />
+    <None Include="..\Debug\Image\状态.bmp" />
+    <None Include="..\Debug\Image\菜单_1_0.bmp" />
+    <None Include="..\Debug\Image\菜单_1_1.bmp" />
+    <None Include="..\Debug\Image\菜单_1_2 - 副本 - 副本.bmp" />
+    <None Include="..\Debug\Image\菜单_1_2.bmp" />
+    <None Include="..\Debug\Image\菜单_2_0 (2).bmp" />
+    <None Include="..\Debug\Image\菜单_2_0.bmp" />
+    <None Include="..\Debug\Image\菜单_2_1.bmp" />
+    <None Include="..\Debug\Image\菜单_2_2 (2).bmp" />
+    <None Include="..\Debug\Image\菜单_2_2.bmp" />
+    <None Include="..\Debug\Image\菜单_3_0.bmp" />
+    <None Include="..\Debug\Image\菜单_3_1.bmp" />
+    <None Include="..\Debug\Image\菜单_3_2.bmp" />
+    <None Include="..\Debug\Image\菜单_4_0.bmp" />
+    <None Include="..\Debug\Image\菜单_4_1.bmp" />
+    <None Include="..\Debug\Image\菜单_4_2.bmp" />
+    <None Include="..\Debug\Image\菜单_5_0.bmp" />
+    <None Include="..\Debug\Image\菜单_5_1.bmp" />
+    <None Include="..\Debug\Image\菜单_5_2.bmp" />
+    <None Include="..\Debug\Image\菜单原始2.bmp" />
+    <None Include="..\Debug\Image\隐藏.bmp" />
+    <None Include="..\Debug\Image\隐藏_1.bmp" />
+    <None Include="..\Debug\Image\隐藏_2.bmp" />
+    <None Include="..\Debug\Image\顶部背景.bmp" />
+    <None Include="..\Debug\Image\顶部背景2.bmp" />
+    <None Include="..\Image\CurChooseWnd.cur" />
+    <None Include="..\Image\Delete_1.bmp" />
+    <None Include="..\Image\Delete_1.png" />
+    <None Include="..\Image\SelectWnd.bmp" />
+    <None Include="..\Image\SelectWnd1.bmp" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\Laozi.ico" />
+    <None Include="res\Laozi.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Dirwatcher\DelayedDirectoryChangeHandler.h" />
+    <ClInclude Include="..\Dirwatcher\DirectoryChanges.h" />
+    <ClInclude Include="..\Dirwatcher\FolderDialog.h" />
+    <ClInclude Include="BtnSelectWnd.h" />
+    <ClInclude Include="DlgBossKey.h" />
+    <ClInclude Include="DlgFileWatch.h" />
+    <ClInclude Include="DlgHelp.h" />
+    <ClInclude Include="DlgMainBase.h" />
+    <ClInclude Include="DlgMainPan.h" />
+    <ClInclude Include="DlgPopBase.h" />
+    <ClInclude Include="GetCurrentModule.h" />
+    <ClInclude Include="KeyHelper.h" />
+    <ClInclude Include="Laozi.h" />
+    <ClInclude Include="LaoziDlg.h" />
+    <ClInclude Include="ListBoxCommon.h" />
+    <ClInclude Include="MouseSignal.h" />
+    <ClInclude Include="MouseSignalInfo.h" />
+    <ClInclude Include="MsgProcess.h" />
+    <ClInclude Include="MyConfig.h" />
+    <ClInclude Include="MyString.h" />
+    <ClInclude Include="MyWinMgr.h" />
+    <ClInclude Include="OwnerDrawListBox.h" />
+    <ClInclude Include="ProcessMgr.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SkinBtn.h" />
+    <ClInclude Include="SkinListBox.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="URLToEncode.h" />
+    <ClInclude Include="Weather.h" />
+    <ClInclude Include="XmlHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dirwatcher\DelayedDirectoryChangeHandler.cpp" />
+    <ClCompile Include="..\Dirwatcher\DirectoryChanges.cpp" />
+    <ClCompile Include="..\Dirwatcher\FolderDialog.cpp" />
+    <ClCompile Include="BtnSelectWnd.cpp" />
+    <ClCompile Include="DlgBossKey.cpp" />
+    <ClCompile Include="DlgFileWatch.cpp" />
+    <ClCompile Include="DlgHelp.cpp" />
+    <ClCompile Include="DlgMainBase.cpp" />
+    <ClCompile Include="DlgMainPan.cpp" />
+    <ClCompile Include="DlgPopBase.cpp" />
+    <ClCompile Include="KeyHelper.cpp" />
+    <ClCompile Include="Laozi.cpp" />
+    <ClCompile Include="LaoziDlg.cpp" />
+    <ClCompile Include="ListBoxCommon.cpp" />
+    <ClCompile Include="MouseSignal.cpp" />
+    <ClCompile Include="MouseSignalInfo.cpp" />
+    <ClCompile Include="MsgProcess.cpp" />
+    <ClCompile Include="MyConfig.cpp" />
+    <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="MyWinMgr.cpp" />
+    <ClCompile Include="OwnerDrawListBox.cpp" />
+    <ClCompile Include="ProcessMgr.cpp" />
+    <ClCompile Include="SkinBtn.cpp" />
+    <ClCompile Include="SkinListBox.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="URLToEncode.cpp" />
+    <ClCompile Include="Weather.cpp" />
+    <ClCompile Include="XmlHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Laozi.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Laozi.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
